@@ -1,7 +1,7 @@
 # E2O-SEAOC2020
 #### Python source code accompanying the Goings et al. (2020) paper published in the SEAOC 2020 proceedings
 
-Hi fellow engineers! This is a public, open-source library of Python functions for converting the ETABS model included within the `models` directory.
+Hi fellow engineers! This is an open-source library of Python functions for converting the ETABS model included within the `models` directory into a nonlinear OpenSees equivalent and running a response history analysis on the nonlinear OpenSees model.
 The ideas implemented in this library are readily extensible to other ETABS models developed with the methodology explained in our paper. However, we 
 currently limit the scope of this library to the enclosed model.
 
