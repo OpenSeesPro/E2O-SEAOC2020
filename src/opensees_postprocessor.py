@@ -30,8 +30,8 @@
         Scale NLRH Analysis Using OpenSees and Comparison with Perform3D,” 
         Proceedings of 2020 SEAOC Virtual Convention, SEAOC, CA
     
-    Introduction of the script - 
-        This is a supporting script for the main.py (user if E2O should execute main.py)
+    Description of the script - 
+        This is a supporting script for the main.py (user should execute main.py)
         This script is used to post-process the data generated through analyses
         in OpenSees.
 

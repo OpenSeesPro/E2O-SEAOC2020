@@ -30,13 +30,13 @@
         Scale NLRH Analysis Using OpenSees and Comparison with Perform3D,” 
         Proceedings of 2020 SEAOC Virtual Convention, SEAOC, CA
 
-    Introduction of this script - 
+    Description of this script - 
         This is the main script that the user is supposed to execute to use E20
         library. All other files are supporting scripts. This script first looks
         for a result folder and if not present creats it. Then it extracts data
         from ETBAS using the etabs_utilities function. Followed by execution of 
         setup_opensees_model method to generate the opensees model.Finally it 
-        executes the analysis in opensses using the run_opensees_model method.
+        executes the analysis in OpenSees using the run_opensees_model method.
 
 '''
 
