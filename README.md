@@ -7,7 +7,7 @@ currently limit the scope of this library to the enclosed model.
 
 To use this library, please fork this repository to your GitHub account and clone to your machine. Add-on packages required to use this library -
   - [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
-  - [comptypes](https://pypi.org/project/comtypes/)
+  - [comtypes](https://pypi.org/project/comtypes/)
   - [numpy](https://numpy.org/install/)
   - [tqdm](https://pypi.org/project/tqdm/)
   
