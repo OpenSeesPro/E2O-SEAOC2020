@@ -1,28 +1,44 @@
-#    MIT License
-#    
-#    Copyright (c) 2020 OpenSeesPro
-#    
-#    Permission is hereby granted, free of charge, to any person obtaining a copy
-#    of this software and associated documentation files (the "Software"), to deal
-#    in the Software without restriction, including without limitation the rights
-#    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#    copies of the Software, and to permit persons to whom the Software is
-#    furnished to do so, subject to the following conditions:
-#    
-#    The above copyright notice and this permission notice shall be included in all
-#    copies or substantial portions of the Software.
-#    
-#    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#    SOFTWARE.
-# 
-#    Developed by:
-#       Ayush Singhania (ayushs@stanford.edu)
-#       Pearl Ranchal (ranchal@berkeley.edu)
+'''
+    MIT License
+    
+    Copyright (c) 2020 OpenSeesPro
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+    Developed by:
+        Ayush Singhania (ayushs@stanford.edu)
+        Pearl Ranchal (ranchal@berkeley.edu)
+      
+    Publication:
+        Goings, C. B., Singhania, A., Ranchal, P., Weaver B., 2020, “Industrial 
+        Scale NLRH Analysis Using OpenSees and Comparison with Perform3D,” 
+        Proceedings of 2020 SEAOC Virtual Convention, SEAOC, CA
+
+    Introduction of this script - 
+        This is the main script that the user is supposed to execute to use E20
+        library. All other files are supporting scripts. This script first looks
+        for a result folder and if not present creats it. Then it extracts data
+        from ETBAS using the etabs_utilities function. Followed by execution of 
+        setup_opensees_model method to generate the opensees model.Finally it 
+        executes the analysis in opensses using the run_opensees_model method.
+
+'''
 
 from general_utilities import start_time, end_time
 from etabs_utilities import get_etabs_data
@@ -66,7 +82,10 @@ if __name__ == '__main__':
     initialOrTangent = 'tangent'
     periods, eigenValues = run_opensees_model(dict_of_hinges, dict_of_disp_nodes, dict_of_rxn_nodes, zeta, initialOrTangent, working_dir)
     
+    # POST-PROCESS ANALYSIS DATA
     df = post_process(initialOrTangent, working_dir)
     base_shear(working_dir, dict_of_rxn_nodes, initialOrTangent)
+    
+    # FINISH
     end_time(start)
     time.sleep(1.0)

@@ -1,28 +1,41 @@
-#    MIT License
-#    
-#    Copyright (c) 2020 OpenSeesPro
-#    
-#    Permission is hereby granted, free of charge, to any person obtaining a copy
-#    of this software and associated documentation files (the "Software"), to deal
-#    in the Software without restriction, including without limitation the rights
-#    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#    copies of the Software, and to permit persons to whom the Software is
-#    furnished to do so, subject to the following conditions:
-#    
-#    The above copyright notice and this permission notice shall be included in all
-#    copies or substantial portions of the Software.
-#    
-#    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#    SOFTWARE.
-# 
-#    Developed by:
-#       Ayush Singhania (ayushs@stanford.edu)
-#       Pearl Ranchal (ranchal@berkeley.edu)
+'''
+    MIT License
+    
+    Copyright (c) 2020 OpenSeesPro
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+    Developed by:
+        Ayush Singhania (ayushs@stanford.edu)
+        Pearl Ranchal (ranchal@berkeley.edu)
+      
+    Publication:
+        Goings, C. B., Singhania, A., Ranchal, P., Weaver B., 2020, “Industrial 
+        Scale NLRH Analysis Using OpenSees and Comparison with Perform3D,” 
+        Proceedings of 2020 SEAOC Virtual Convention, SEAOC, CA
+    
+    Introduction of the script - 
+        This is a supporting script for the main.py (user if E2O should execute main.py)
+        This script is used to post-process the data generated through analyses
+        in OpenSees.
+
+'''
 
 import os
 import numpy as np 
