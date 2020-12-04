@@ -5,8 +5,12 @@ Hi fellow engineers! This is a public, open-source library of Python functions f
 The ideas implemented in this library are readily extensible to other ETABS models developed with the methodology explained in our paper. However, we 
 currently limit the scope of this library to the enclosed model.
 
-To use this library, please fork this repository to your GitHub account and clone to your machine.
-
+To use this library, please fork this repository to your GitHub account and clone to your machine. Add-on packages required to use this library -
+  - [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
+  - [comptypes](https://pypi.org/project/comtypes/)
+  - [numpy](https://numpy.org/install/)
+  - [tqdm](https://pypi.org/project/tqdm/)
+  
 If you would like to propose changes, please submit a pull requests from your fork.
 
 Helpful links to learn more:
